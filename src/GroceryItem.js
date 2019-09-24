@@ -12,17 +12,14 @@ const styles = {
 }
 
 const GroceryItem = ({id, name, price, brought,todoClick, remove}) => (
+  <div>
   <List.Item key={id}
   style={ brought ? { ...styles.GroceryItem, ...styles.brought } : styles.GroceryItem }
-  onClick={ () => todoClick(id) }
-
-  >
+  onClick={ () => todoClick(id) }>
     {name} - ${price} --
-
-  <Button color="white" onClick={() => remove(id)}>
-      Delete
-  </Button>
-  </List.Item>
+    </List.Item>
+    <Button color="white" key={id} onClick={() => remove(id)}> Delete </Button>
+    </div>
 
 
 )

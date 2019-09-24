@@ -4,7 +4,7 @@ import { List } from 'semantic-ui-react';
 
 
 const GroceryList = ({items, todoClick, remove}) => (
-  <List>
+    <List>
 
         {
           items.map( items => (
@@ -13,8 +13,8 @@ const GroceryList = ({items, todoClick, remove}) => (
           ))
         }
 
+      </List>
 
-  </List>
 )
 
 

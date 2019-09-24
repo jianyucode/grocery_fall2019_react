@@ -64,7 +64,7 @@ handleClick = (id) => {
     return (
       <Container>
       <Header>React Grocery List </Header>
-      <GroceryForm add={this.addGroceryItem} />
+      <GroceryForm add={this.addGroceryItem} /><br />
       <GroceryList items={items}  remove={this.removeGroceryItem} todoClick={this.handleClick}  />
 
       </Container>
